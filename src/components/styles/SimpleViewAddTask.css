@@ -1,0 +1,36 @@
+.add-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.add-area textarea {
+    flex: 1;
+    /* box-sizing: border-box; */
+    /* background-color: transparent; */
+    /* border-bottom-right-radius: 15px 3px; */
+    /* border-bottom-left-radius: 3px 15px; */
+    border: solid 1px black;
+    border-radius: 8px;
+    width: 100%;
+    padding: 4px;
+    /* border-bottom: dashed 3px #fdcb6e; */
+    font-family: "Architects Daughter", cursive;
+    font-size: 1rem;
+    resize: none;
+    /* color: hsla(260, 2%, 25%, 0.7); */
+}
+
+.add-area button {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-family: "Architects Daughter", cursive;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #ffeaa7;
+}

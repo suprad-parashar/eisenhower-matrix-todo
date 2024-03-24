@@ -1,0 +1,7 @@
+select {
+    font-family: "Architects Daughter", cursive;
+    font-size: 0.75rem;
+    border: solid 1px transparent;
+    background-color: transparent;
+    width: fit-content
+}
