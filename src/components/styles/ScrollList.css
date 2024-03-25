@@ -1,0 +1,5 @@
+.scroll-list {
+    overflow: auto;
+    width: 100%;
+    text-wrap: wrap;
+}

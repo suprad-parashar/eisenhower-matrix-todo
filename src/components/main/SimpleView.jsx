@@ -1,6 +1,7 @@
 import "../styles/SimpleView.css";
-import SimpleViewAddTask from "./SimpleViewAddTask";
-import SimpleViewTaskItem from "./SimpleViewTaskItem";
+import AddTask from "./AddTask";
+import Heading from "./Heading";
+import ScrollList from "./ScrollList";
 import { useState } from "react";
 
 function SimpleView() {
@@ -22,20 +23,11 @@ function SimpleView() {
     }
 
     return (
-        <div>
+        <div className="simpleview-container">
             <div className="input-area">
-                <h1>Todo List</h1>
-                <SimpleViewAddTask onAdd={addTask} nextId={tasks.length}/>
-                <div className="scroll-list">
-                    {tasks.map((task, index) => (
-                        <SimpleViewTaskItem
-                            key={task.id}
-                            content={task.content}
-                            isCompleted={task.isCompleted}
-                            id={task.id}
-                            onComplete={completeTask}/>
-                    ))}
-                </div>
+                <Heading />
+                <AddTask onAdd={addTask} />
+                <ScrollList tasks={tasks} onComplete={completeTask} />
             </div>
         </div>
     );

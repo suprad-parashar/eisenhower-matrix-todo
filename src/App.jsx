@@ -1,8 +1,11 @@
-import SimpleView from './components/main/SimpleView';
+import MinimalView from './components/main/MinimalView';
 
 function App() {
   return (
-    <SimpleView />
+    <div className="app-container" style={{width: "100vw", height: "100vh"}}>
+      <MinimalView />
+      {/* <SimpleView /> */}
+    </div>
   )
 }
 

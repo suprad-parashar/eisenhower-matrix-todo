@@ -1,6 +1,6 @@
 import "../styles/SimpleViewAddTaskSelector.css";
 
-function SimpleViewAddTaskSelector(props) {
+function MetadataSelector(props) {
     return (
         <select name={props.label.toLowerCase()} onChange={props.onSelect} defaultValue={`Select ${props.label}`}>
             <option value={`Select ${props.label}`} disabled hidden>Select {props.label}</option>
@@ -11,4 +11,4 @@ function SimpleViewAddTaskSelector(props) {
     );
 }
 
-export default SimpleViewAddTaskSelector;
+export default MetadataSelector;

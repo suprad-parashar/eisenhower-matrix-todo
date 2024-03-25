@@ -10,19 +10,13 @@
 
 .add-area textarea {
     flex: 1;
-    /* box-sizing: border-box; */
-    /* background-color: transparent; */
-    /* border-bottom-right-radius: 15px 3px; */
-    /* border-bottom-left-radius: 3px 15px; */
     border: solid 1px black;
     border-radius: 8px;
     width: 100%;
     padding: 4px;
-    /* border-bottom: dashed 3px #fdcb6e; */
     font-family: "Architects Daughter", cursive;
     font-size: 1rem;
     resize: none;
-    /* color: hsla(260, 2%, 25%, 0.7); */
 }
 
 .add-area button {

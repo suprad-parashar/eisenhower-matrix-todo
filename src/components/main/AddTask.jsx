@@ -1,9 +1,9 @@
-import "../styles/SimpleViewAddTask.css";
+import "../styles/AddTask.css";
 import { useState } from "react";
-import SimpleViewAddTaskSelector from "./SimpleViewAddTaskSelector";
+import MetadataSelector from "./MetadataSelector";
 import { v4 as uuid } from "uuid";
 
-function SimpleViewAddTask(props) {
+function AddTask(props) {
     const [isExpanded, setIsExpanded] = useState(false);
     const [taskState, setTaskState] = useState({
         content: "",
@@ -57,12 +57,12 @@ function SimpleViewAddTask(props) {
         <div className="add-area">
             <textarea type="text" placeholder="Add a task..." value={taskState.content} onChange={handleChange} rows={isExpanded ? 3 : 1} onClick={handleFocus}/>
             {isExpanded && (<div className="task-metadata">
-                <SimpleViewAddTaskSelector label="Importance" options={options} onSelect={handleSelection}/>
-                <SimpleViewAddTaskSelector label="Urgency" options={options} onSelect={handleSelection}/>
+                <MetadataSelector label="Importance" options={options} onSelect={handleSelection}/>
+                <MetadataSelector label="Urgency" options={options} onSelect={handleSelection}/>
             </div>)}
             {isExpanded && <button onClick={handleClick}>{taskState.content ? "Add" : "Close"}</button>}
         </div>
     );
 }
 
-export default SimpleViewAddTask;
+export default AddTask;

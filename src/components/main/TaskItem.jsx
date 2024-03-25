@@ -1,7 +1,7 @@
 import "../styles/SimpleViewTaskItem.css";
 import { useState } from "react";
 
-function SimpleViewTaskItem(props) {
+function TaskItem(props) {
     const [isCompleted, setIsCompleted] = useState(false);
 
     function handleClick() {
@@ -22,4 +22,4 @@ function SimpleViewTaskItem(props) {
     );
 }
 
-export default SimpleViewTaskItem;
+export default TaskItem;
